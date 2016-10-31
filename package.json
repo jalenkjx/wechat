@@ -1,6 +1,7 @@
 {
   "name": "wechat",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description":"",
   "dependencies": {
     "express": "^4.14.0",
@@ -36,4 +37,18 @@
     "url": "https://github.com/jalenkjx/wechat/issues"
   },
   "homepage": "https://github.com/jalenkjx/wechat#readme"
+=======
+  "description": "node wechat",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "node server/app.js"
+  },
+  "author": "jinlei569@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "swig": "^1.4.2"
+  }
+>>>>>>> 11a57b08059601debb647ca9334783b2752b967f
 }
