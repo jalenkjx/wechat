@@ -5,7 +5,7 @@ var app = new express();
 var path = require('path');
 
 //加载 token 模块
-require("./token")(app);
+require("./token.js")(app);
 
 var staticpath = path.join(__dirname, "../static");
 
