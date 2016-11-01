@@ -1,6 +1,43 @@
 {
   "name": "wechat",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description":"",
+  "dependencies": {
+    "express": "^4.14.0",
+    "swig": "^1.4.2",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.6",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-classes": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-runtime": "^6.18.0",
+    "chokidar": "^1.6.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalenkjx/wechat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalenkjx/wechat/issues"
+  },
+  "homepage": "https://github.com/jalenkjx/wechat#readme"
+=======
   "description": "node wechat",
   "main": "server/app.js",
   "scripts": {
@@ -13,4 +50,5 @@
     "express": "^4.14.0",
     "swig": "^1.4.2"
   }
+>>>>>>> 11a57b08059601debb647ca9334783b2752b967f
 }
