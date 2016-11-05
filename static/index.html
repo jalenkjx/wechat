@@ -19,6 +19,7 @@
 </head>
 <body>
 	<h1>welcome</h1>
+
 	<script type="text/html">
 		function jsonpcallback(res){
 			alert(JSON.stringify(res));
@@ -27,6 +28,7 @@
 		script.src = "/wechat/jssdk?callback=jsonpcallback"
 		document.querySelector('body').appendChild(script);
 	</script>
+
 	<script>
 		$.post('/wechat/jssdk',{},function(data){
 			console.log(data);
