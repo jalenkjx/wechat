@@ -2,7 +2,7 @@ var obj = {
     title: '分享标题',
     desc: '分享内容',
     //分享链接
-    link: "http://g63.jscook.cn/",
+    link: "http://wx.jscook.cn/",
     //分享的图片
     imgUrl: "http://www.jscss.cc/static/images/jscss.cc.ico",
     success: function() {
@@ -18,6 +18,8 @@ $(function(){
 			'onMenuShareTimeline',
             'onMenuShareAppMessage',
             'onMenuShareQQ',
+            
+            'onGetNetworkType',
             'onMenuShareWeibo'
 		].join(",")
 	},function(resp){
@@ -40,4 +42,14 @@ $(function(){
                 wx.onMenuShareTimeline(obj);
         });
 	},"json");
+    $("#getNetworkType").on("click",function(){
+        wx.getNetworkType({
+            success: function (res) {
+                // 返回网络类型2g，3g，4g，wifi
+                var networkType = res.networkType;
+                alert(networkType);
+            }
+        });
+    });
+
 })
