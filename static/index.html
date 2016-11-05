@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script src="jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
 	<title>Document</title>
 	<style>
 
@@ -15,9 +18,20 @@
 	</style>
 </head>
 <body>
-	<h1>璇宝宝，我想你</h1>
-	<script>
-		console.log(1);
+	<h1>welcome</h1>
+	<script type="text/html">
+		function jsonpcallback(res){
+			alert(JSON.stringify(res));
+		}
+		vat script = document.createElement('script');
+		script.src = "/wechat/jssdk?callback=jsonpcallback"
+		document.querySelector('body').appendChild(script);
 	</script>
+	<script>
+		$.post('/wechat/jssdk',{},function(data){
+			console.log(data);
+		},'json')
+	</script>
+	<script src="test.js"></script>
 </body>
 </html>

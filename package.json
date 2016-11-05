@@ -1,7 +1,6 @@
 {
   "name": "wechat",
   "version": "1.0.0",
-
   "description": "node wechat",
   "main": "server/app.js",
   "scripts": {
@@ -12,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "wechat-api": "^1.31.0"
   }
-
 }
