@@ -18,9 +18,9 @@ $(function(){
 			'onMenuShareTimeline',
             'onMenuShareAppMessage',
             'onMenuShareQQ',
-            
             'onGetNetworkType',
-            'onMenuShareWeibo'
+            'onMenuShareWeibo',
+            'chooseImage'
 		].join(",")
 	},function(resp){
 		wx.config({
