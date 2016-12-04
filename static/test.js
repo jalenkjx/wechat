@@ -20,7 +20,8 @@ $(function(){
             'onMenuShareQQ',
             'onGetNetworkType',
             'onMenuShareWeibo',
-            'chooseImage'
+            'chooseImage',
+            'scanQRCode'
 		].join(",")
 	},function(resp){
 		wx.config({
@@ -64,7 +65,7 @@ $(function(){
             }
         });
     });
-
+    //分享接口
     $('#share').on('click',function(){
         wx.onMenuShareTimeline({
             title: 'zhenzhenhaitao', // 分享标题
@@ -79,6 +80,16 @@ $(function(){
                 alert(222);
             }
         });
-    })
+    });
+    //二维码接口
+    $('#scanqr').on('click',function(){
+        wx.scanQRCode({
+            needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+            var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+        }
+        });
+    });
 
 })
