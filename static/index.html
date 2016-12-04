@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="jquery.min.js"></script>
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 
@@ -21,6 +22,7 @@
 	<h1>welcome</h1>
 	<button id="getNetworkType">点我获取网络状态</button>
 	<button id="img">图片</button>
+	<button id="share">分享</button>
 	<div id="imgbox">
 		<img src="" alt="">
 	</div>
@@ -34,9 +36,9 @@
 	</script>
 
 	<script>
-		$.post('/wechat/jssdk',{},function(data){
-			console.log(data);
-		},'json')
+		// $.post('/wechat/jssdk',{},function(data){
+		// 	console.log(data);
+		// },'json')
 	</script>
 	<script src="test.js"></script>
 </body>

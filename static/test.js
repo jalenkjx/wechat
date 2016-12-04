@@ -63,6 +63,22 @@ $(function(){
                 $('#imgbox').children('img').attr('src',localIds);
             }
         });
+    });
+
+    $('#share').on('click',function(){
+        wx.onMenuShareTimeline({
+            title: 'zhenzhenhaitao', // 分享标题
+            link: 'wx.kjxjl.top', // 分享链接
+            imgUrl: 'http://www.jscss.cc/static/images/jscss.cc.ico', // 分享图标
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+                alert('111');
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+                alert(222);
+            }
+        });
     })
 
 })
