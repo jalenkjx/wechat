@@ -1,7 +1,9 @@
 //字符串加密处理
 var crypto = require("crypto");
 //个心信息配置
-var config = require("./config.js")();
+//var config = require("./config.js")();
+var config = require("./config02.js")();
+
 
 //字符串加密
 function sha1(str){

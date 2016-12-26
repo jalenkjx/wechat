@@ -12,7 +12,8 @@ var Url = require("url");
 // 微信 api 模块
 var WechatAPI = require('wechat-api');
 // 微信 个人信息配置模块
-var config = require("./config.js")();
+//var config = require("./config.js")();
+var config = require("./config02.js")();
 
 function md5(data) {
     var Buffer = require("buffer").Buffer;
